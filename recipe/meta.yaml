@@ -1,5 +1,5 @@
-{% set version = "v0.2.0" %}
-{% set checksum = "a3c64bfc3d977f0ed75b370c6cca8a5c044b8b692952dd99e22440d467bc4244" %}
+{% set version = "v0.3.0" %}
+{% set checksum = "825a11fad400146109bfd996ce88a46248499a9a22a01e1633283a0f97e2c87c" %}
 
 package:
     name: inferno
@@ -29,7 +29,7 @@ requirements:
         - dill
         - networkx 1.11
         - tensorboardx >=1.4
-        - pytorch >=0.4,<0.5
+        - pytorch >=0.3,<1.1
         - torchvision >=0.2,<0.3
 
 test:
