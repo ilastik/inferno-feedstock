@@ -1,6 +1,8 @@
 About inferno
 =============
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://github.com/inferno-pytorch/inferno
 
 Package license: Apache 2.0
@@ -14,9 +16,8 @@ Summary: A utility library around PyTorch
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/inferno-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/inferno-feedstock)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/inferno-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/inferno-feedstock)
 
 Current release info
 ====================
@@ -104,3 +105,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@constantinpape](https://github.com/constantinpape/)
+* [@nasimrahaman](https://github.com/nasimrahaman/)
+
