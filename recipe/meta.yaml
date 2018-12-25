@@ -1,5 +1,5 @@
-{% set version = "v0.3.0" %}
-{% set checksum = "825a11fad400146109bfd996ce88a46248499a9a22a01e1633283a0f97e2c87c" %}
+{% set version = "v0.3.1" %}
+{% set checksum = "06171471d2de99a3cc89d0004caf6128cd2dc39904d28cef95ba1acf1a563d23" %}
 
 package:
     name: inferno
@@ -27,7 +27,7 @@ requirements:
         - scikit-image
         - h5py
         - dill
-        - networkx 1.11
+        - networkx
         - tensorboardx >=1.4
         - pytorch >=0.3,<1.1
         - torchvision >=0.2,<0.3
