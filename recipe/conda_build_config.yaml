@@ -17,6 +17,6 @@ zip_keys:
   - pytorch_flavor
   - torchvision_flavor
 pytorch_pinning:
-  - ">=0.4,<0.5"
+  - ">=1.0,<1.1"
 torchvision_pinning:
   - ">=0.2,<0.3"
