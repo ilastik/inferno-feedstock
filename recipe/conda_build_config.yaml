@@ -1,0 +1,22 @@
+channels_sources:
+    - pytorch
+    - conda-forge
+    - defaults
+
+package_name:
+  - inferno
+  - inferno-cpu
+pytorch_flavor:
+  - pytorch
+  - pytorch-cpu
+torchvision_flavor:
+  - torchvision
+  - torchvision-cpu
+zip_keys:
+  - package_name
+  - pytorch_flavor
+  - torchvision_flavor
+pytorch_pinning:
+  - ">=0.4,<0.5"
+torchvision_pinning:
+  - ">=0.2,<0.3"
