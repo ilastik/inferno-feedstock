@@ -1,16 +1,21 @@
 {% set version = "v0.3.1" %}
 {% set checksum = "06171471d2de99a3cc89d0004caf6128cd2dc39904d28cef95ba1acf1a563d23" %}
+{% set version_formatted = version|replace("v","") %}
+{% set pytorch_flavor = pytorch_flavor or "pytorch" %}
+{% set torchvision_flavor = torchvision_flavor or "torchvision" %}
+{% set package_name = package_name or "inferno" %}
+
 
 package:
-    name: inferno
-    version: {{ version }}
+    name: {{ package_name }}
+    version: {{ version_formatted }}
 
 source:
     url: https://github.com/inferno-pytorch/inferno/archive/{{ version }}.tar.gz
     sha256: {{ checksum }}
 
 build:
-    number: 0
+    number: 1
     script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
     noarch: python
 
@@ -29,8 +34,8 @@ requirements:
         - dill
         - networkx
         - tensorboardx >=1.4
-        - pytorch >=0.3,<1.1
-        - torchvision >=0.2,<0.3
+        - {{ pytorch_flavor }} {{ pytorch_pinning }}
+        - {{ torchvision_flavor }} {{ torchvision_pinning }}
 
 test:
     imports:
