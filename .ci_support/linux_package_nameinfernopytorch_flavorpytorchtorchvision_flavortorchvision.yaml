@@ -1,0 +1,22 @@
+build_number_decrement:
+- '0'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+docker_image:
+- condaforge/linux-anvil-comp7
+package_name:
+- inferno
+pytorch_flavor:
+- pytorch
+pytorch_pinning:
+- '>=0.4,<0.5'
+torchvision_flavor:
+- torchvision
+torchvision_pinning:
+- '>=0.2,<0.3'
+zip_keys:
+- - package_name
+  - pytorch_flavor
+  - torchvision_flavor

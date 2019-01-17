@@ -1,7 +1,9 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About inferno
 =============
-
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 Home: https://github.com/inferno-pytorch/inferno
 
@@ -25,6 +27,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-inferno-green.svg)](https://anaconda.org/conda-forge/inferno) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/inferno.svg)](https://anaconda.org/conda-forge/inferno) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/inferno.svg)](https://anaconda.org/conda-forge/inferno) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/inferno.svg)](https://anaconda.org/conda-forge/inferno) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-inferno--cpu-green.svg)](https://anaconda.org/conda-forge/inferno-cpu) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/inferno-cpu.svg)](https://anaconda.org/conda-forge/inferno-cpu) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/inferno-cpu.svg)](https://anaconda.org/conda-forge/inferno-cpu) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/inferno-cpu.svg)](https://anaconda.org/conda-forge/inferno-cpu) |
 
 Installing inferno
 ==================
@@ -35,10 +38,10 @@ Installing `inferno` from the `conda-forge` channel can be achieved by adding `c
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `inferno` can be installed with:
+Once the `conda-forge` channel has been enabled, `inferno, inferno-cpu` can be installed with:
 
 ```
-conda install inferno
+conda install inferno inferno-cpu
 ```
 
 It is possible to list all of the versions of `inferno` available on your platform with:
@@ -50,6 +53,8 @@ conda search inferno --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
