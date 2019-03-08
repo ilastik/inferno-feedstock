@@ -15,8 +15,8 @@ source:
     sha256: {{ checksum }}
 
 build:
-    number: 2
-    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+    number: 3
+    script: python -m pip install --no-deps --ignore-installed .
     noarch: python
 
 requirements:
