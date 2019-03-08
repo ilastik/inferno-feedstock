@@ -1,7 +1,7 @@
 channels_sources:
-    - pytorch
-    - conda-forge
-    - defaults
+  - pytorch
+  - conda-forge
+  - defaults
 
 package_name:
   - inferno
