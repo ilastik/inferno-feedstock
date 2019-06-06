@@ -24,6 +24,16 @@ requirements:
         - python >=3.6
         - pip
         - pytest-runner
+        # FIXME I have no idea why we need all this in the host requirements
+        - pyyaml
+        - scipy
+        - scikit-image
+        - h5py
+        - dill
+        - networkx
+        - tensorboardx >=1.4
+        - {{ pytorch_flavor }} {{ pytorch_pinning }}
+        - {{ torchvision_flavor }} {{ torchvision_pinning }}
 
     run:
         - python >=3.6
